@@ -1,0 +1,6 @@
+{
+  "name": "Flappy Bird 2",
+  "description": "Flappy Bird 2 with new obstacles, multi-theme levels, realistic bird chirping audio, authentic visual assets, and high score leaderboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

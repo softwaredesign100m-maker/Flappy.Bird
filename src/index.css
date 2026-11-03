@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-cartoon {
+    font-family: 'Lilita One', 'Fredoka', cursive, sans-serif;
+  }
+  .font-game {
+    font-family: 'Fredoka', sans-serif;
+  }
+  .text-stroke-sm {
+    -webkit-text-stroke: 1.5px #1e293b;
+    paint-order: stroke fill;
+  }
+  .text-stroke-md {
+    -webkit-text-stroke: 2.5px #0f172a;
+    paint-order: stroke fill;
+  }
+  .text-stroke-lg {
+    -webkit-text-stroke: 4px #0f172a;
+    paint-order: stroke fill;
+  }
+  .text-stroke-white {
+    -webkit-text-stroke: 2px #ffffff;
+    paint-order: stroke fill;
+  }
+  .text-stroke-brown {
+    -webkit-text-stroke: 3px #582f0e;
+    paint-order: stroke fill;
+  }
+  .btn-3d-green {
+    background: linear-gradient(180deg, #84cc16 0%, #4ade80 20%, #22c55e 75%, #15803d 100%);
+    box-shadow: 0 8px 0 #14532d, 0 12px 16px rgba(0,0,0,0.35);
+  }
+  .btn-3d-green:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 0 #14532d, 0 6px 10px rgba(0,0,0,0.3);
+  }
+  .btn-3d-orange {
+    background: linear-gradient(180deg, #fde047 0%, #facc15 25%, #f97316 80%, #ea580c 100%);
+    box-shadow: 0 6px 0 #9a3412, 0 8px 12px rgba(0,0,0,0.3);
+  }
+  .btn-3d-orange:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #9a3412, 0 4px 8px rgba(0,0,0,0.25);
+  }
+  .btn-3d-blue {
+    background: linear-gradient(180deg, #38bdf8 0%, #0ea5e9 25%, #0284c7 80%, #0369a1 100%);
+    box-shadow: 0 6px 0 #075985, 0 8px 12px rgba(0,0,0,0.3);
+  }
+  .btn-3d-blue:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #075985, 0 4px 8px rgba(0,0,0,0.25);
+  }
+  .btn-3d-purple {
+    background: linear-gradient(180deg, #f472b6 0%, #ec4899 25%, #c026d3 80%, #9333ea 100%);
+    box-shadow: 0 6px 0 #6b21a8, 0 8px 12px rgba(0,0,0,0.3);
+  }
+  .btn-3d-purple:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #6b21a8, 0 4px 8px rgba(0,0,0,0.25);
+  }
+}
+
+@keyframes gentle-bob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+}
+
+.animate-gentle-bob {
+  animation: gentle-bob 2.2s ease-in-out infinite;
+}
+
+@keyframes flap-wing {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.7);
+  }
+}
+
+.animate-flap-wing {
+  animation: flap-wing 0.28s ease-in-out infinite;
+}
